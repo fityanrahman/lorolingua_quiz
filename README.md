@@ -1,16 +1,16 @@
-# quiz_app
+# Lorolingua Quiz App
 
 A Quiz Flutter project.
 
-## Getting Started
+<p float="left">
+  <img width="30%" height="50%" src="https://github.com/fityanrahman/lorolingua_quiz/-/raw/main/screenshots/home.png" />
+  <img width="30%" height="50%" src="https://github.com/fityanrahman/lorolingua_quiz/-/raw/main/screenshots/topic.png" />
+  <img width="30%" height="50%" src="https://github.com/fityanrahman/lorolingua_quiz/-/raw/main/screenshots/quiz.png" />
+  <img width="30%" height="50%" src="https://github.com/fityanrahman/lorolingua_quiz/-/raw/main/screenshots/result.jpg" />
+</p>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Features
+- 2 Language available : English and Japanese
+- Quiz Timer
+- Quiz Report
+- Share Report
