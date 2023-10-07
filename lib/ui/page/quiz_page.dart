@@ -51,7 +51,13 @@ class _QuizPageState extends State<QuizPage> {
         appBar: AppBar(
           automaticallyImplyLeading: false,
           title: Text('${widget.topics.topicName} Quiz'),
-          actions: [TextButton(onPressed: () {}, child: const Text('Exit'))],
+          actions: [
+            TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text('Exit'))
+          ],
         ),
         body: Column(
           children: [
@@ -74,7 +80,9 @@ class _QuizPageState extends State<QuizPage> {
                   Text(
                     widget.topics.questions[provider.countQuiz].question,
                     style: TextStyle(
-                        color: Theme.of(context).colorScheme.onSecondary),
+                        color: Theme.of(context).colorScheme.onSecondary,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold),
                   )
                 ],
               ),
@@ -98,8 +106,10 @@ class _QuizPageState extends State<QuizPage> {
                         fixedSize:
                             Size(MediaQuery.of(context).size.width - 32, 0),
                       ),
-                      child: Text(widget.topics.questions[provider.countQuiz]
-                          .choices[index].choice),
+                      child: Text(
+                        widget.topics.questions[provider.countQuiz]
+                            .choices[index].choice,
+                      ),
                     ),
                   );
                 }),

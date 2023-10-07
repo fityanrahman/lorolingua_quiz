@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_app/provider/quiz_provider.dart';
 import 'package:quiz_app/ui/widget/answer_widget.dart';
+import 'package:share_plus/share_plus.dart';
 
 class ResultPage extends StatelessWidget {
   const ResultPage({super.key});
@@ -42,7 +43,10 @@ class ResultPage extends StatelessWidget {
                 height: 12,
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () async {
+                  await Share.share(
+                      'I got ${provider.correctAnswer} / ${provider.totalQuiz} score for ${provider.quizName} Quiz on Lorolingua Quiz App!');
+                },
                 child: const Text('Share your score'),
               ),
               const SizedBox(height: 12),

@@ -87,33 +87,8 @@ class QuizProvider extends ChangeNotifier {
   updateRemainingTime() {
     _timerCount--;
     _timerValue = timerCount / 30;
-    print('timeout : $_timerCount');
-    print('timerValue : $_timerValue');
     notifyListeners();
   }
-  // void startTimer() {
-  //   const oneSec = Duration(seconds: 1);
-  //   _timer = Timer.periodic(
-  //     oneSec,
-  //     (Timer timer) {
-  //       if (_timerCount == 0) {
-  //         timer.cancel();
-  //         notifyListeners();
-  //       } else {
-  //         _timerCount--;
-  //         _timerValue = 30000 / _timerCount;
-  //         notifyListeners();
-  //       }
-  //     },
-  //   );
-  //   print(_timerCount);
-  // }
-
-  // @override
-  // void dispose() {
-  //   super.dispose();
-  //   _timer.cancel();
-  // }
 
   Future fetchAllTopics() async {
     _state = ResultState.loading;
@@ -180,15 +155,6 @@ class QuizProvider extends ChangeNotifier {
       _falseAnswer++;
     }
 
-    Answers answer = Answers(
-        topicName: _quizName,
-        correct: _correctAnswer,
-        incorrect: _falseAnswer,
-        details: _listDetail);
-
     notifyListeners();
-
-    print(answer);
-    print('length detail : ${_listDetail.length}');
   }
 }
