@@ -30,4 +30,4 @@ We may update this Privacy Policy from time to time to reflect changes to our pr
 
 ## 7. Contact Us
 
-If you have any questions or concerns about this Privacy Policy, please contact us at: **email@example.com**.
+If you have any questions or concerns about this Privacy Policy, please contact us at: **hi.fityan@gmail.com**.
